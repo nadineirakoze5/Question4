@@ -9,7 +9,7 @@ class Rectangle extends Shape {
     @Override
     double calculateArea(){
         area = length*width;
-        System.out.println("The Area of Circle is " + area);
+        System.out.println("The Area of Rectangle is " + area);
         return area;
     }
 }
