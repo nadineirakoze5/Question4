@@ -12,17 +12,32 @@ public class Main {
         System.out.println("You Choose: " + input);
 
         if (input.equals("Circle")) {
-            Shape Shape1 = new Circle(2.5);
+
+            System.out.print("Enter radius of the circle: ");
+            double radius = scanner.nextDouble();
+            Shape Shape1 = new Circle(radius);
             Shape1.calculateArea();
         }
 
        else if (input.equals("Rectangle")) {
-            Shape Shape2 = new Rectangle(6.9, 3.3);
+
+            System.out.print("Enter length of the rectangle: ");
+            double length = scanner.nextDouble();
+            System.out.print("Enter width of the rectangle: ");
+            double width = scanner.nextDouble();
+
+            Shape Shape2 = new Rectangle(length, width);
             Shape2.calculateArea();
         }
 
        else if(input.equals("Triangle")){
-            Shape Shape3 = new Triangle(4.5, 5.5);
+
+            System.out.print("Enter base of the triangle: ");
+            double base = scanner.nextDouble();
+            System.out.print("Enter height of the triangle: ");
+            double height = scanner.nextDouble();
+
+            Shape Shape3 = new Triangle(base, height);
             Shape3.calculateArea();
         }
        else{
