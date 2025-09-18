@@ -11,6 +11,8 @@ public class Main {
 
         System.out.println("You Choose: " + input);
 
+    try{
+
         if (input.equals("Circle")) {
 
             System.out.print("Enter radius of the circle: ");
@@ -40,8 +42,12 @@ public class Main {
             Shape Shape3 = new Triangle(base, height);
             Shape3.calculateArea();
         }
-       else{
+        else{
             System.out.println("Invalid choice!");
+        }
+    }
+     catch(Exception e){
+         System.out.println("Invalid Input!, Try Again");
         }
     }
 }
